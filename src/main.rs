@@ -8,6 +8,10 @@ pub struct Pig {
 #[derive(Resource)]
 pub struct Money(pub f32);
 
+#[derive(Component)]
+pub struct Player {
+    pub speed: f32,
+}
 
 //TODO: add system for pig wandering and variable lifetime.
 fn main() {
